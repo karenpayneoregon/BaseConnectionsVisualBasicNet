@@ -1,0 +1,44 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28010.2041
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "KarenBase", "KarenBase\KarenBase.vbproj", "{62D2F0D6-728A-4519-98F9-45F576BFCC1F}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Libraries", "Libraries", "{10CD125D-F9AC-4D1E-8C28-FD05E11AC27E}"
+EndProject
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "SampleSqlConnection", "SampleSqlConnection\SampleSqlConnection.vbproj", "{D20EDB78-D924-403B-9523-5744BB1C8496}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Examples", "Examples", "{85D2E36D-62D0-4F1F-B123-32288A642C7F}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{6154C953-EEEF-482D-9B81-966EF7BF14BE}"
+	ProjectSection(SolutionItems) = preProject
+		Readme.md = Readme.md
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{62D2F0D6-728A-4519-98F9-45F576BFCC1F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{62D2F0D6-728A-4519-98F9-45F576BFCC1F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{62D2F0D6-728A-4519-98F9-45F576BFCC1F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{62D2F0D6-728A-4519-98F9-45F576BFCC1F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D20EDB78-D924-403B-9523-5744BB1C8496}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D20EDB78-D924-403B-9523-5744BB1C8496}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D20EDB78-D924-403B-9523-5744BB1C8496}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D20EDB78-D924-403B-9523-5744BB1C8496}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{62D2F0D6-728A-4519-98F9-45F576BFCC1F} = {10CD125D-F9AC-4D1E-8C28-FD05E11AC27E}
+		{D20EDB78-D924-403B-9523-5744BB1C8496} = {85D2E36D-62D0-4F1F-B123-32288A642C7F}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {33992813-59FC-4113-B9C2-4EC4D9F12982}
+	EndGlobalSection
+EndGlobal
