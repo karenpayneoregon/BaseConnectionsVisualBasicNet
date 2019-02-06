@@ -12,7 +12,7 @@ This repository is for base classes used for connecting to both SQL-Server and M
 - Follow the example in the project SampleSqlConnection for SQL-Server. MS-Access example to follow.
 
 ### Requires
-- Microsoft Visual Studio
+- Microsoft Visual Studio 2015 or higher.
 
 ### Tips
 - [IsSuccessFul](https://github.com/karenpayneoregon/BaseConnectionsVisualBasicNet/blob/master/KarenBase/Classes/BaseExceptionProperties.vb) from the base exception class allow a type to be returned from a function such as a [List(Of T)](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.list-1?view=netframework-4.7.2) or [DataTable](https://docs.microsoft.com/en-us/dotnet/api/system.data.datatable?view=netframework-4.7.2) without the need to be concerned with if there had been a runtime exception as after the method calls and before using the return item check IsSuccessFul.
