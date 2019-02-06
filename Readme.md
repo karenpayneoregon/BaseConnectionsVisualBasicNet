@@ -7,8 +7,8 @@ This repository is for base classes used for connecting to both SQL-Server and M
 ## Getting started
 - Add the class project KarenBase to your Visual Studio solution, rename the project if so desired.
 - Add a reference to KarenBase to your Windows forms project.
-- ***Set*** `DatabaseServer`{:.ruby} to your server e.g. KARENS-PC or for SQL-Server Express .\SQLEXPRESS
-- ***Set*** `DefaultCatalog`{:.ruby} to the targeted database in the server above.
+- ***Set*** `DatabaseServer` to your server e.g. KARENS-PC or for SQL-Server Express .\SQLEXPRESS
+- ***Set*** `DefaultCatalog` to the targeted database in the server above.
 - Follow the example in the project SampleSqlConnection for SQL-Server. MS-Access example to follow.
 
 ### Requires
