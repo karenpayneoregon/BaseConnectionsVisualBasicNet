@@ -36,6 +36,7 @@ Public Class Form1
 End Class
 ```
 
+For a C# version of this library see [the following repository](https://github.com/karenpayneoregon/BaseConnectionsCS).
 
 
 
