@@ -38,5 +38,6 @@ End Class
 
 For a C# version of this library see [the following repository](https://github.com/karenpayneoregon/BaseConnectionsCS).
 
+## NuGet package
 
-
+PM> Install-Package BaseConnectionLibrary -Version 1.0.0
