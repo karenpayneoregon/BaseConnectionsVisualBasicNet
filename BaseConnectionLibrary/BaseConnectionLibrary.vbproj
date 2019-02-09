@@ -1,0 +1,19 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <RootNamespace>BaseConnectionLibrary</RootNamespace>
+    <TargetFramework>net46</TargetFramework>
+    <PackageProjectUrl>https://github.com/karenpayneoregon/BaseConnectionsVisualBasicNet</PackageProjectUrl>
+    <Authors>Karen Payne</Authors>
+    <Company>Karen Payne</Company>
+    <Description>This package contains classes for connecting to SQL-Server and OleDb compatible databases using managed data providers for VB.NET programming language</Description>
+    <Copyright>None</Copyright>
+    <PackageLicenseUrl>https://raw.githubusercontent.com/NuGet/NuGet.Client/dev/LICENSE.txt</PackageLicenseUrl>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Reference Include="System.Data.DataSetExtensions" />
+  </ItemGroup>
+
+</Project>

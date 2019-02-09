@@ -14,7 +14,10 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{6154C953-EEEF-482D-9B81-966EF7BF14BE}"
 	ProjectSection(SolutionItems) = preProject
 		Readme.md = Readme.md
+		readmeNuGet.md = readmeNuGet.md
 	EndProjectSection
+EndProject
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "BaseConnectionLibrary", "BaseConnectionLibrary\BaseConnectionLibrary.vbproj", "{33B8659C-7E83-4691-B908-514048311A0B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -30,6 +33,10 @@ Global
 		{D20EDB78-D924-403B-9523-5744BB1C8496}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D20EDB78-D924-403B-9523-5744BB1C8496}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D20EDB78-D924-403B-9523-5744BB1C8496}.Release|Any CPU.Build.0 = Release|Any CPU
+		{33B8659C-7E83-4691-B908-514048311A0B}.Debug|Any CPU.ActiveCfg = Release|Any CPU
+		{33B8659C-7E83-4691-B908-514048311A0B}.Debug|Any CPU.Build.0 = Release|Any CPU
+		{33B8659C-7E83-4691-B908-514048311A0B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{33B8659C-7E83-4691-B908-514048311A0B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -37,6 +44,7 @@ Global
 	GlobalSection(NestedProjects) = preSolution
 		{62D2F0D6-728A-4519-98F9-45F576BFCC1F} = {10CD125D-F9AC-4D1E-8C28-FD05E11AC27E}
 		{D20EDB78-D924-403B-9523-5744BB1C8496} = {85D2E36D-62D0-4F1F-B123-32288A642C7F}
+		{33B8659C-7E83-4691-B908-514048311A0B} = {10CD125D-F9AC-4D1E-8C28-FD05E11AC27E}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {33992813-59FC-4113-B9C2-4EC4D9F12982}
