@@ -1,7 +1,6 @@
 ﻿Imports System.Data.OleDb
 Imports BaseConnectionLibrary.Interfaces
 
-
 Namespace ConnectionClasses
     Public MustInherit Class AccessConnection
         Inherits BaseExceptionProperties
@@ -9,7 +8,7 @@ Namespace ConnectionClasses
 
         Private ReadOnly _builder As New OleDbConnectionStringBuilder With
             {
-            .Provider = "Microsoft.ACE.OLEDB.12.0"
+                .Provider = "Microsoft.ACE.OLEDB.12.0"
             }
         ''' <summary>
         ''' Database name and path

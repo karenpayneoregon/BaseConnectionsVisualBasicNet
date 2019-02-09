@@ -1,6 +1,5 @@
 ﻿Imports BaseConnectionLibrary.Interfaces
 
-
 Namespace ConnectionClasses
     Public MustInherit Class SqlServerConnection
         Inherits BaseExceptionProperties
