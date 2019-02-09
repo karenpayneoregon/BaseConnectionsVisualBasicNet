@@ -5,7 +5,7 @@ This repository is for base classes used for connecting to both SQL-Server and M
 > This code may not suit every developer's need and also may seem like overkill to the novice developer. The intent is to have a base class that can be used in any project in one or more Visual Studio solutions. Although the code is VB.NET, the base library can be used with C# also.
 
 ## Getting started
-- Add the class project [KarenBase](https://github.com/karenpayneoregon/BaseConnectionsVisualBasicNet/tree/master/KarenBase) to your Visual Studio solution, rename the project if so desired.
+- Add the class project [BaseConnectionLibrary](https://github.com/karenpayneoregon/BaseConnectionsVisualBasicNet/tree/master/BaseConnectionLibrary) to your Visual Studio solution, rename the project if so desired.
 - Add a reference to KarenBase to your Windows forms project.
 - ***Set*** `DatabaseServer` to your server e.g. KARENS-PC or for SQL-Server Express .\SQLEXPRESS
 - ***Set*** `DefaultCatalog` to the targeted database in the server above.
@@ -35,8 +35,5 @@ Public Class Form1
     End Sub
 End Class
 ```
-
-For a C# version of this library see [the following repository](https://github.com/karenpayneoregon/BaseConnectionsCS).
-
 
 

@@ -1,0 +1,1 @@
+﻿Source for NuGet package BaseConnectionLibrary using .NET Core.
