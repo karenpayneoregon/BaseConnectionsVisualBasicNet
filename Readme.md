@@ -11,6 +11,10 @@ This repository is for base classes used for connecting to both SQL-Server and M
 - ***Set*** `DefaultCatalog` to the targeted database in the server above.
 - Follow the example in the project SampleSqlConnection for SQL-Server. MS-Access example to follow.
 
+## Test projects
+See the following [repository](http://example.com) which focuses more on using this library 
+with C# but does have a VB.NET project for SQL-Server.
+
 ### Requires
 - Microsoft Visual Studio 2015 or higher.
 
