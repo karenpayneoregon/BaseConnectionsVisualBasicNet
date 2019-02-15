@@ -1,6 +1,6 @@
-# Base connection library (VB.NET)
+# Base connection library (VB.NET/C#)
 
-This repository is for base classes used for connecting to both SQL-Server and MS-Access databases using several classes for both easily creating connections along with a generalized method to detect runtime exceptions.
+This repository is for base classes used for connecting to both SQL-Server, MS-Access and Oracle databases using several classes for both easily creating connections along with a generalized method to detect runtime exceptions.
 
 > This code may not suit every developer's need and also may seem like overkill to the novice developer. The intent is to have a base class that can be used in any project in one or more Visual Studio solutions. Although the code is VB.NET, the base library can be used with C# also.
 
@@ -36,6 +36,18 @@ Public Class Form1
         Else
             ' don't use the return type
         End If
+    End Sub
+End Class
+```
+Simple example for Oracle
+```csharp
+Public Class DataOperations
+    Inherits OracleConnection
+
+    Public Sub New()
+        DataServer = "MyOracleDB"
+        UserId = "myUsername"
+        Password = "myPassword"
     End Sub
 End Class
 ```
