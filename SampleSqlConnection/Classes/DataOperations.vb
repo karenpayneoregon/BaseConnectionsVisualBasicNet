@@ -12,12 +12,14 @@ Namespace Classes
             DefaultCatalog = "NorthWindAzure3"
 
             Using cn As New SqlConnection(ConnectionString)
+
                 Try
                     cn.Open()
                 Catch ex As Exception
                     mHasException = True
                     mLastException = ex
                 End Try
+
             End Using
         End Sub
     End Class

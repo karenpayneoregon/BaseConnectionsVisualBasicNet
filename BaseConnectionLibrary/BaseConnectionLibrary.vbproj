@@ -6,15 +6,15 @@
     <PackageProjectUrl>https://github.com/karenpayneoregon/BaseConnectionsVisualBasicNet</PackageProjectUrl>
     <Authors>Karen Payne</Authors>
     <Company>Karen Payne</Company>
-    <Description>This package contains classes for connecting to SQL-Server , Oracle and OleDb compatible databases using managed data providers for VB.NET programming language</Description>
+    <Description>This package contains classes for connecting to SQL-Server , Oracle and OleDb compatible databases using managed data providers for C# and VB.NET programming language</Description>
     <Copyright>None</Copyright>
     <PackageLicenseUrl>https://raw.githubusercontent.com/NuGet/NuGet.Client/dev/LICENSE.txt</PackageLicenseUrl>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
-    <AssemblyVersion>1.0.0.1</AssemblyVersion>
+    <AssemblyVersion>1.0.0.2</AssemblyVersion>
     <Version>1.0.1</Version>
     <PackageReleaseNotes>Added Oracle connection class</PackageReleaseNotes>
     <PackageTags>SQL-Server,MS-Access,Oracle, Connection, Connection class</PackageTags>
-    <FileVersion>1.0.1.1</FileVersion>
+    <FileVersion>1.0.1.2</FileVersion>
   </PropertyGroup>
 
   <ItemGroup>
