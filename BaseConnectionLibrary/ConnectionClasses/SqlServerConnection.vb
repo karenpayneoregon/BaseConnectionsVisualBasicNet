@@ -1,9 +1,11 @@
 ﻿Imports BaseConnectionLibrary.Interfaces
+Imports BaseConnectionLibrary.LanguageExtensions
 
 Namespace ConnectionClasses
     Public MustInherit Class SqlServerConnection
         Inherits BaseExceptionProperties
         Implements IConnection
+
         ''' <summary>
         ''' This points to your database server
         ''' </summary>
@@ -18,10 +20,29 @@ Namespace ConnectionClasses
         ''' for authentication (when true).
         ''' </summary>
         Protected IntegratedSecurity As Boolean = True
+        ''' <summary>
+        ''' Valid user name located in the database
+        ''' </summary>
+        Protected UserAccountName As String
+        ''' <summary>
+        ''' Password associated with UserAccountName
+        ''' </summary>
+        Protected UserAccountPassword As String
+        ''' <summary>
+        ''' Returns a connection string for windows authentication or with user name and password
+        ''' </summary>
+        ''' <returns></returns>
         Public ReadOnly Property ConnectionString As String Implements IConnection.ConnectionString
             Get
-                Return $"Data Source={DatabaseServer};Initial Catalog={DefaultCatalog};Integrated Security={IntegratedSecurity}"
+                If HasUserNameAndPassword() Then
+                    Return $"Data Source={DatabaseServer};Initial Catalog={DefaultCatalog};User Id={UserAccountName};Password = {UserAccountPassword}"
+                Else
+                    Return $"Data Source={DatabaseServer};Initial Catalog={DefaultCatalog};Integrated Security={IntegratedSecurity}"
+                End If
             End Get
         End Property
+        Private Function HasUserNameAndPassword() As Boolean
+            Return Not UserAccountName.IsNullOrWhiteSpace() AndAlso Not UserAccountPassword.IsNullOrWhiteSpace()
+        End Function
     End Class
 End Namespace

@@ -2,7 +2,7 @@
 
   <PropertyGroup>
     <RootNamespace>BaseConnectionLibrary</RootNamespace>
-    <TargetFramework>net46</TargetFramework>
+    <TargetFrameworks>net40;net45;net451;net452;net46;net461</TargetFrameworks>
     <PackageProjectUrl>https://github.com/karenpayneoregon/BaseConnectionsVisualBasicNet</PackageProjectUrl>
     <Authors>Karen Payne</Authors>
     <Company>Karen Payne</Company>
@@ -10,11 +10,11 @@
     <Copyright>None</Copyright>
     <PackageLicenseUrl>https://raw.githubusercontent.com/NuGet/NuGet.Client/dev/LICENSE.txt</PackageLicenseUrl>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
-    <AssemblyVersion>1.0.0.2</AssemblyVersion>
-    <Version>1.0.1</Version>
-    <PackageReleaseNotes>Added Oracle connection class</PackageReleaseNotes>
+    <AssemblyVersion>1.0.0.3</AssemblyVersion>
+    <Version>1.0.3</Version>
+    <PackageReleaseNotes>Added properties for SQL-Server connection to pass in user account name and password. Added extension method for providing 3.5 framework compatibility for next release.</PackageReleaseNotes>
     <PackageTags>SQL-Server,MS-Access,Oracle, Connection, Connection class</PackageTags>
-    <FileVersion>1.0.1.2</FileVersion>
+    <FileVersion>1.0.0.2</FileVersion>
   </PropertyGroup>
 
   <ItemGroup>

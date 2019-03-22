@@ -83,4 +83,8 @@ For a C# version of this library see [the following repository](https://github.c
 
 ## NuGet package
 
-PM> Install-Package BaseConnectionLibrary -Version 1.0.0
+PM> Install-Package BaseConnectionLibrary -Version 1.0.3
+
+- 3-22-2019 added a wider range of supported Frameworks.
+- 3-22-2019 added ability for SQL-Server connection to use user name and password.
+

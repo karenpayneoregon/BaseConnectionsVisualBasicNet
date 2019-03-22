@@ -1,5 +1,6 @@
 ﻿Imports System.Data.OleDb
 Imports BaseConnectionLibrary.Interfaces
+Imports BaseConnectionLibrary.LanguageExtensions
 
 Namespace ConnectionClasses
     Public MustInherit Class AccessConnection
@@ -17,7 +18,7 @@ Namespace ConnectionClasses
         Public ReadOnly Property ConnectionString As String Implements IConnection.ConnectionString
             Get
 
-                If String.IsNullOrWhiteSpace(DefaultCatalog) Then
+                If DefaultCatalog.IsNullOrWhiteSpace() Then
                     Throw New Exception("Database name and path not provided.")
                 End If
 

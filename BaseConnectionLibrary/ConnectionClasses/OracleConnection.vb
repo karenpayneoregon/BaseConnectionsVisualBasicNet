@@ -1,4 +1,5 @@
 ﻿Imports BaseConnectionLibrary.Interfaces
+Imports BaseConnectionLibrary.LanguageExtensions
 
 Public MustInherit Class OracleConnection
     Inherits BaseExceptionProperties
@@ -48,11 +49,11 @@ Public MustInherit Class OracleConnection
             template = $"Data Source={DataServer};Persist Security Info={PersistSecurityInfo};" &
                        $"Enlist={Enlist};Pooling={Pooling};Statement Cache Size={StatementCacheSize};"
 
-            If String.IsNullOrWhiteSpace(UserId) Then
+            If UserId.IsNullOrWhiteSpace() Then
                 Return template
             End If
 
-            If Not String.IsNullOrWhiteSpace(Password) Then
+            If Not Password.IsNullOrWhiteSpace() Then
                 template = template & $"User ID={UserId};Password={Password};"
             End If
         Else

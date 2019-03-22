@@ -121,9 +121,9 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\KarenBase\KarenBase.vbproj">
-      <Project>{62d2f0d6-728a-4519-98f9-45f576bfcc1f}</Project>
-      <Name>KarenBase</Name>
+    <ProjectReference Include="..\BaseConnectionLibrary\BaseConnectionLibrary.vbproj">
+      <Project>{33b8659c-7e83-4691-b908-514048311a0b}</Project>
+      <Name>BaseConnectionLibrary</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />

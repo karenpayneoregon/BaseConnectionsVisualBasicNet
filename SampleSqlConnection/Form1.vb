@@ -4,11 +4,14 @@ Public Class Form1
         Handles testConnectionButton.Click
 
         Dim ops As New DataOperations
-        ops.TestSqlConnection()
+        ops.TestSqlConnectionWindowsAuthentication()
         If ops.IsSuccessFul Then
             TextBox1.Text = "Successfully connected!!!"
         Else
             TextBox1.Text = ops.LastExceptionMessage
         End If
+
+        ops.TestSqlConnectionWithUserNameAndPassword()
+
     End Sub
 End Class
