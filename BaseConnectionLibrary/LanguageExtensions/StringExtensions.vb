@@ -3,8 +3,8 @@
         ''' <summary>
         ''' Provides functionality for Framework 3.5 available in Framework 4x
         ''' </summary>
-        ''' <param name="sender"></param>
-        ''' <returns></returns>
+        ''' <param name="sender">String</param>
+        ''' <returns>sender is valid</returns>
         <Runtime.CompilerServices.Extension>
         Public Function IsNullOrWhiteSpace(sender As String) As Boolean
             Return (sender Is Nothing) OrElse String.IsNullOrEmpty(sender.Trim())

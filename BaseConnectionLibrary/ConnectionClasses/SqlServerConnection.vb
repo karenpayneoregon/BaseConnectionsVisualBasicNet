@@ -2,6 +2,9 @@
 Imports BaseConnectionLibrary.LanguageExtensions
 
 Namespace ConnectionClasses
+    ''' <summary>
+    ''' Responsible for creating a Microsoft SQL-Server connection string
+    ''' </summary>
     Public MustInherit Class SqlServerConnection
         Inherits BaseExceptionProperties
         Implements IConnection
@@ -31,7 +34,7 @@ Namespace ConnectionClasses
         ''' <summary>
         ''' Returns a connection string for windows authentication or with user name and password
         ''' </summary>
-        ''' <returns></returns>
+        ''' <returns>SQL-Server connection string</returns>
         Public ReadOnly Property ConnectionString As String Implements IConnection.ConnectionString
             Get
                 If HasUserNameAndPassword() Then
@@ -41,6 +44,10 @@ Namespace ConnectionClasses
                 End If
             End Get
         End Property
+        ''' <summary>
+        ''' Indicates if user name and password are set
+        ''' </summary>
+        ''' <returns>True if user name and password has been set, False otherwise</returns>
         Private Function HasUserNameAndPassword() As Boolean
             Return Not UserAccountName.IsNullOrWhiteSpace() AndAlso Not UserAccountPassword.IsNullOrWhiteSpace()
         End Function

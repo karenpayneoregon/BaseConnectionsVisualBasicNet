@@ -1,5 +1,7 @@
 ﻿Public Class BaseExceptionProperties
-
+    ''' <summary>
+    ''' Used to flag an exception has been thrown
+    ''' </summary>
     Protected mHasException As Boolean
     ''' <summary>
     ''' Indicate the last operation thrown an exception or not
@@ -10,6 +12,9 @@
             Return mHasException
         End Get
     End Property
+    ''' <summary>
+    ''' Used to set last exception thrown
+    ''' </summary>
     Protected mLastException As Exception
     ''' <summary>
     ''' Provides access to the last exception thrown
